@@ -1,6 +1,10 @@
 <?php
     class crawler{
-        function crawlerSet(){
+        private function crawlerSet(){
+
+        }
+
+        public function messageCreator(){
 
         }
     }
