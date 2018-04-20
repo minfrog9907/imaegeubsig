@@ -1,5 +1,6 @@
 <?php
     include 'crawler.php';
+    $crawler = new Crawler;
 
     $data = json_decode(file_get_contents('php://input'), true);
     $content = $data["content"];

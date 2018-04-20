@@ -1,10 +1,17 @@
 <?php
-    class crawler{
-        private function crawlerSet(){
+    class Crawler{
+        public function __construct(){
 
         }
+        public function getLunch(){
+            
+        }
 
-        public function messageCreator(){
+        public function getDinner(){
+            
+        }
+
+        private function messageCreator($data){
 
         }
     }
