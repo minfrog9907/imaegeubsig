@@ -1,6 +1,6 @@
 <?php
     include 'crawler.php';
-    $crawler = new Crawler;
+    $crawler = new Crawler("asdf");
 
     $data = json_decode(file_get_contents('php://input'), true);
     $content = $data["content"];
