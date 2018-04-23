@@ -37,13 +37,14 @@
         protected function messageCreator($data, $time){
             foreach ($data as $menu) {
                 $menu = $this->replacer($menu);
-                $message = "";
-                if($menu == "" || $menu == null){
-                    $message .= "오늘은 급식이 없습니다."
+                $message = date("Y-m-d") . "\\n\\n";
+                if($menu == ""){
+                    $message .= "오늘은 급식이 없습니다.";
                 }else{
-                    $message .= date("Y-m-d")." 오늘의 ".$time."은 \\n\\n";
+                    $message .= "오늘의 ".$time."은 \\n";
                     $message .= $menu;
-                    $message .= "\\n\\n입니다. 맛있게 드세요!";  
+                    $message .= "\\n입니다.\\n\\n";
+                    $message .= "맛있게 드세요!";  
                 }
                 return $message;
             }
